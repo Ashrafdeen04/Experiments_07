@@ -16,7 +16,7 @@ def train_model():
         pickle.dump(clf, f)
     print("✅ Model trained and saved to model/my_model.pkl")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     profiler = cProfile.Profile()
     profiler.enable()
 
